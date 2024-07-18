@@ -1,6 +1,6 @@
 import { motion, useMotionValue, useTransform } from "framer-motion";
 
-const Eye = () => {
+const Eye = (props) => {
     const xInput = [-100, 0, 100]
     
     const x = useMotionValue(0)
@@ -9,8 +9,7 @@ const Eye = () => {
 
     return (
         <svg
-            // width={21}   colocar no tailwind
-            // height={17}
+            className={ props.className }
             viewBox="0 0 21 17"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
