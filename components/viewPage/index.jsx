@@ -1,6 +1,5 @@
 import Eye from "@/public/icons/eye"
 import Input from "../input"
-import X from "@/public/icons/x"
 import Button from "../button"
 import Line from "./line"
 import BaseText from "./baseText"
@@ -15,7 +14,7 @@ const ViewPage = () => {
 
     return (
         <form className="flex-grow flex flex-col justify-center" onSubmit={(event) => event.preventDefault()}>
-            <h1 className="font-bold text-center mb-5 text-xl sm369:text-2xl">
+            <h1 className="font-bold text-center mb-5 text-xl md:text-[26px]">
                 Sign In to recharge Direct
             </h1>
             <div className="flex flex-col gap-y-5">
