@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from 'react'
 import Logged from '@/public/icons/logged'
 import Loading from './loading'
@@ -18,4 +19,8 @@ const Button = (props) => {
     return <button className="bg-[#4461F2] w-full p-4 text-white mt-5 rounded-md font-bold min-h-[56px]" onClick={() => handleClick()}>{buttonChildren}</button>
 }
 
+=======
+const Button = () => <button className="bg-[#4461F2] w-full p-4 text-white mt-5 rounded-md font-bold">Sign In</button>
+
+>>>>>>> 26355b680e45e7f12516b18a78ffad4077d4ea86
 export default Button
