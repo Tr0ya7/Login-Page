@@ -3,7 +3,7 @@ import Header from '@/components/header'
 import SideText from '@/components/sideText'
 import ViewPage from '@/components/viewPage'
 import Ellipse from '@/public/background/ellipse'
-import Pic from '@/public/background/pic'
+import Pic from '@/components/pic'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ["latin"] })
