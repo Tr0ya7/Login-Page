@@ -8,7 +8,7 @@ const Pic = () => {
     
     const windowSize = useWindowSize()
 
-    useEffect(() => { windowSize >= 1280 && setWidth(545); setHeight(449) }, [windowSize])
+    useEffect(() => { windowSize >= 1366 && setWidth(545); setHeight(449) }, [windowSize])
 
     return <Image className="my-auto pb-16 hidden lg:block" src="/background/pic.png" width={width} height={height} alt="men pic" />
 }
