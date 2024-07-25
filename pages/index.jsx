@@ -12,11 +12,11 @@ const Home = () => {
     return (
         <main>
             <section className="bg-[#f6f6f6] w-full flex">
-                <section className={`flex min-h-screen relative p-9 gap-x-10 w-full justify-center lg:gap-x-5 xl:gap-x-14 ${inter.className}`}>
+                <section className={`flex min-h-screen relative p-9 gap-x-10 w-full justify-center lg:gap-x-5 xl:gap-x-14 z-10 ${inter.className}`}>
                     <Header />
                     <SideText />
                     <Pic />
-                    <div className="relative flex flex-col w-[350px] absolute z-10">
+                    <div className="relative flex flex-col w-[350px] absolute">
                         <ViewPage />
                         <BottomText />
                     </div>

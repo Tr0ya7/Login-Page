@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Logged from '@/public/icons/logged'
 import Loading from './loading'
+import X from '@/public/icons/x'
 
 const Button = (props) => { 
     const defaultButtonChildren = 'Sign In'
@@ -9,7 +10,7 @@ const Button = (props) => {
     const handleClick = () => {
         setButtonChildren(<Loading />)
         
-        if (!props.email && !props.password) { setButtonChildren('X'); return setTimeout(() => setButtonChildren(defaultButtonChildren), 3000) }
+        if (!props.email || !props.password) { setButtonChildren(<><X className="w-[24px] h-[24px] m-auto" /></>); return setTimeout(() => setButtonChildren(defaultButtonChildren), 3000) }
             
         setTimeout(() => setButtonChildren(<div className="flex justify-center"><Logged className="w-6" /></div>), 3000)
         setTimeout(() => setButtonChildren(defaultButtonChildren), 6500)

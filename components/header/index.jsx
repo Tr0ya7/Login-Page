@@ -6,9 +6,7 @@ const Header = () => {
 
     return (
         <header className="text-[17px] flex justify-end items-center h-fit absolute left-0 right-0 md:justify-center md:gap-x-10 md:mx-auto">
-            <HeaderItens>
-                {windowSize < 768 ? null : <><li>Sign In</li><li>Register</li></>}
-            </HeaderItens>
+            <HeaderItens>{windowSize < 768 ? null : <><li className="border-b-4 border-[#4461F2] rounded-b">Sign In</li><li>Register</li></>}</HeaderItens>
         </header>
     )
 }

@@ -14,3 +14,7 @@ ul {
     list-style: none;
     font-size: 17px;
 }
+
+li {
+    cursor: pointer
+}
