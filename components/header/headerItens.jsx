@@ -17,7 +17,7 @@ const HeaderItens = (props) => {
     return (
         <ul className="flex items-center gap-x-9">
             <section className="relative">
-                <div className="flex gap-x-1.5 items-center cursor-pointer px-4 md:p-0" onClick={handleOnClick}>
+                <div className="flex gap-x-1.5 items-center cursor-pointer px-6 md:p-0" onClick={handleOnClick}>
                     <li>
                         English
                     </li>
@@ -27,7 +27,6 @@ const HeaderItens = (props) => {
                         </motion.div>
                     </li>
                 </div>
-                
                 <ul className={`absolute bg-white p-1 rounded mt-3 ${view}`}>
                     {languages.map((lang) => <li key={lang.id} className="p-1 transition hover:bg-[#4461f2] hover:text-white">{lang.language}</li>)}
                 </ul>
